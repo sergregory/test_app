@@ -16,6 +16,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEAS
 set(TEST_APP_LIBRARY ${PROJECT_NAME})
 set(TEST_APP_TESTS   "${PROJECT_NAME}_test")
 set(TEST_APP_INCLUDE "${CMAKE_CURRENT_SOURCE_DIR}/include")
+set(TEST_APP_TOOLS "${PROJECT_NAME}_tool")
 
 include_directories("${TEST_APP_INCLUDE}")
 include_directories("${CMAKE_CURRENT_SOURCE_DIR}/3rdparty")
@@ -25,6 +26,7 @@ include_directories("${CMAKE_CURRENT_SOURCE_DIR}/3rdparty")
 add_subdirectory(3rdparty)
 add_subdirectory(src)
 add_subdirectory(test)
+add_subdirectory(tools)
 
 # REPORT
 message( STATUS "")
